@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI & DS CGPA Calculator</title>
+    <link rel="stylesheet" href="sem2.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI & DS - Semester II CGPA Calculator</h1>
+
+    <table id="gradeTable">
+        <tr>
+            <th>Subject</th>
+            <th>Credits</th>
+            <th>Grade</th>
+        </tr>
+
+     
+        <tr>
+            <td>Mathemetical Foundation For Engineering</td>
+            <td>4</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Programming in C and Data Structures</td>
+            <td>3</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Operating System</td>
+            <td>3</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tamils And Technology</td>
+            <td>1</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Advanced Communicative English</td>
+            <td>3</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chemistry for Computing Science</td>
+            <td>4</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Engineering Grapics</td>
+            <td>3</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Programming in C and Data Structures Lab</td>
+            <td>2</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Interpersonal Skills</td>
+            <td>0</td>
+            <td>
+                <select onchange="calculateCGPA()">
+                    <option value="">Select</option>
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="RA">RA</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+
+    <h2 id="result">CGPA: 0.00</h2>
+</div>
+
+<script src="sem2.js"></script>
+</body>
+</html>

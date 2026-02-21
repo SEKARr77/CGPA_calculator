@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading | AZHAM CGPA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color:white;
+    flex-direction:column;
+    text-align:center;
+}
+
+/* Logo */
+.logo{
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:3px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo span{
+    color:#00f5d4;
+}
+
+/* Loading Spinner */
+.loader{
+    margin-top:30px;
+    width:60px;
+    height:60px;
+    border:6px solid rgba(70, 105, 244, 0.2);
+    border-top:6px solid #00f5d4;
+    border-radius:50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Loading Text */
+.loading-text{
+    margin-top:15px;
+    font-size:16px;
+    opacity:0.8;
+}
+
+/* Animations */
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:480px){
+    .logo{
+        font-size:26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">Excel <span>CGPA</span></div>
+
+<div class="loader"></div>
+
+<div class="loading-text">Loading Semester Selection...</div>
+
+<script>
+// Redirect after 3 seconds
+setTimeout(function(){
+    window.location.href = "semester.html";
+}, 3000);
+</script>
+
+</body>
+</html>

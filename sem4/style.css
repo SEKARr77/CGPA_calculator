@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    text-align: center;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2c5364;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+select {
+    padding: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2c5364;
+}
