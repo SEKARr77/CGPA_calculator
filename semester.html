@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CGPA Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semester Selection | AZHAM CGPA</title>
+
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f6f9;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-}
-.container{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
-    text-align:center;
-}
-select, button{
-    padding:10px;
-    margin-top:15px;
-    width:200px;
-}
-button{
-    background:#2c3e50;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
 }
+
+.container{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding:40px;
+    border-radius:20px;
+    width:90%;
+    max-width:420px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    background:#00f5d4;
+    color:#1e3c72;
+    cursor:pointer;
+    transition:0.3s;
+}
+
 button:hover{
-    background:#1a252f;
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Responsive */
+@media(max-width:480px){
+    .container{
+        padding:30px 20px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
-<h2>Select Semester</h2>
+<h2>Select Option</h2>
 
-<select id="semester">
-    <option value="">-- Choose Semester --</option>
+<select id="option">
+    <option value="">-- Choose --</option>
     <option value="sem1.html">Semester 1</option>
     <option value="sem2.html">Semester 2</option>
     <option value="sem3.html">Semester 3</option>
+    <option value="overall.html">Overall CGPA</option>
 </select>
 
-<br>
-<button onclick="goToSemester()">Submit</button>
+<button onclick="goToPage()">Submit</button>
+
 </div>
 
 <script>
-function goToSemester(){
-    let sem = document.getElementById("semester").value;
-    if(sem === ""){
-        alert("Please select a semester");
+function goToPage(){
+    let page = document.getElementById("option").value;
+    if(page === ""){
+        alert("Please select an option");
     } else {
-        window.location.href = sem;
+        window.location.href = page;
     }
 }
 </script>
